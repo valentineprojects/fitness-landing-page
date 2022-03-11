@@ -1,16 +1,112 @@
-/* Sticky discount
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
 
-Timer, pre-hearer
-*/
-.header {
-  position: absolute;
-  width: 1440px;
-  height: 56px;
-  left: 0px;
-  top: 0px;
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-/* Secondary / Preheader */
-.pre-header {
-  background: #90caf9;
+img,
+picture {
+  max-width: 100%;
+  display: block;
 }
+
+button {
+  font: inherit;
+}
+/* Reset Over */
+
+/* Root variables */
+
+:root {
+  /* Colors */
+  --color-bg: #e0e0e0;
+  --color-accent: #ff9b4e;
+  --color-bg-pre-header: #90caf9;
+  --color-bg-header: #ffff;
+  --color-bg-save: #ffe082;
+  --color-checkmark: #91b83d;
+  --color-text-dark: #22222c;
+  --color-text-light: #ffff;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sd: 90%;
+}
+
+/* Scrooling behavior */
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fonts */
+body {
+  font-family: "SF Pro Display", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text-dark);
+}
+
+/* Font sizes */
+h1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 56px;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Helper classes */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: var(--container-width-lg);
+  text-align: center;
+}
+
+.margin-mobile {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.margin-desktop {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Mobile queries */
