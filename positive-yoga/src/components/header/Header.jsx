@@ -14,7 +14,7 @@ const Header = () => {
     <header >
       <div className="sticky">
         <div className="pre-header flex-center">
-          <img className='icon-offer' src={offerIcon}></img>
+          <img className='icon-offer' src={offerIcon} alt='logo'></img>
           50% discount only valid for
           <div>
             <CountdownTimer countdownTimestampMs={countDownTime15Min} />
@@ -24,7 +24,11 @@ const Header = () => {
       <div className='header flex-center'>
         <img className='logo' src={logo}/>
       </div>
+        <div>
+        <p className='order-count flex-center'>Over <strong>52 147</strong> plans ordered.</p>
+      </div>
     </header>
+    
   )
 }
 

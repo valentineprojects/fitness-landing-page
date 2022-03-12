@@ -1,0 +1,37 @@
+.feature-checkmark {
+  width: 24px;
+  height: 24px;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature-container > div > h3 {
+  margin-bottom: 1.5rem;
+}
+
+.feature {
+  max-width: 351px;
+}
+
+.feature-text {
+  margin-left: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-feature-text);
+  letter-spacing: 1px;
+}
+
+.feature-image {
+  width: 343px;
+  height: 366px;
+}
+
+.feature-item {
+  margin-top: 8px;
+}
