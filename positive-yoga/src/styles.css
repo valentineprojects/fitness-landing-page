@@ -39,6 +39,7 @@ button {
   --color-text-light: #ffff;
   --color-text-link: #79addc;
   --color-feature-text: #424242;
+  --color-box-grey: #ebebeb;
 }
 
 /* Scrooling behavior */
@@ -166,6 +167,7 @@ section {
   cursor: pointer;
 }
 
-a:link {
+a:link,
+a:visited {
   color: var(--color-text-link);
 }

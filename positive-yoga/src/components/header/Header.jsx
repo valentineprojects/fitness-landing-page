@@ -25,7 +25,7 @@ const Header = () => {
         <img className='logo' src={logo}/>
       </div>
         <div>
-        <p className='order-count flex-center'>Over <strong>52 147</strong> plans ordered.</p>
+        <p className='order-count flex-center'>Over<strong>&nbsp; 52 147 &nbsp;</strong>plans ordered.</p>
       </div>
     </header>
     

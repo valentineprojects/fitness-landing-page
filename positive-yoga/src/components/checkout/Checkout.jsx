@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './checkout.css'
 import '../../styles.css'
 import safeCheckout from '../../assets/safe-checkout.svg'
@@ -9,10 +9,20 @@ import dietIcon from '../../assets/diet.svg'
 import whistleIcon from '../../assets/whistle.svg'
 import smartwatchIcon from '../../assets/smartwatch.svg'
 import bookcheckIcon from '../../assets/bookcheck.svg'
-import checkmarkIcon from '../../assets/checkmark-icon.svg'
+import checkmarkIconActive from '../../assets/checkmark-icon.svg'
+import checkmarkIcon from '../../assets/circle-grey.svg'
 
 
 const Checkout = () => {
+
+  const [borderColor, setBorderColor] = useState('2px solid var(--color-box-grey);');
+  const [boxIcon, setBoxIcon] = useState(checkmarkIcon);
+
+  const setBorder = (borderColor, boxIcon) => {
+    setBorderColor(borderColor);
+    setBoxIcon(boxIcon);
+  }
+
   return (
     <section className='checkout-section flex-center flex-column'>
       <div>
@@ -22,7 +32,7 @@ const Checkout = () => {
           <div className='child1 flex-column'>
           <h3>Choose your plan and get <span className='text-accent-color'> 7 days free trial</span> </h3>
           {/* Box 1 */}
-            <div className="box flex-row">
+            <div className="box flex-row" onClick={()=> setBorder('')}>
                 <div className="box-text flex-column">
                 <div>
                     <h5>6 month plan

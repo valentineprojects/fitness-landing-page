@@ -99,6 +99,14 @@
 /* Boxes */
 
 .box {
+  border: 2px solid var(--color-box-grey);
+  border-radius: 16px;
+  padding: 16px;
+  margin: 8px 0 0 0;
+  max-height: 131px;
+}
+
+.box:active {
   border: 2px solid var(--color-accent);
   border-radius: 16px;
   padding: 16px;
