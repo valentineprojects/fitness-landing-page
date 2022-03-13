@@ -15,8 +15,8 @@ import checkmarkIcon from '../../assets/circle-grey.svg'
 
 const Checkout = () => {
 
-  const [isActive1, setActive1] = useState(true);
-  const [isActive2, setActive2] = useState(false);
+  const [isActive1, setActive1] = useState(false);
+  const [isActive2, setActive2] = useState(true);
   const [isActive3, setActive3] = useState(false);
 
 
