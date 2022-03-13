@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-// import './countdown.css'
 import '../../styles.css'
 import './countdowntimer.css'
 import { getRemainingTimeUntilMsTimestamp } from './utils/CountdowntTimerUtils.js'
@@ -29,9 +28,9 @@ const CountdownTimer = ({countdownTimestampMs}) => {
     return(
         <div className="countdown-timer">
             <span className="two-numbers">{remainingTime.hours}</span>
-            <span>:</span>
+            <span className='two-number-dots'>&nbsp;: </span>
             <span className="two-numbers">{remainingTime.minutes}</span>
-            <span>:</span>
+            <span className='two-number-dots'>&nbsp;: </span>
             <span className="two-numbers">{remainingTime.seconds}</span>
         </div>
     );

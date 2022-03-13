@@ -24,10 +24,8 @@ button {
 }
 /* Reset Over */
 
-/* Root variables */
-
+/* Global Colors */
 :root {
-  /* Colors */
   --color-bg: #ffff;
   --colow-bg-shadow: #e0e0e0;
   --color-accent: #ff9b4e;
@@ -87,12 +85,11 @@ h5 {
 }
 
 section {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 /* Helper classes */
-
 .flex-center {
   display: flex;
   justify-content: center;
@@ -122,8 +119,7 @@ section {
 .text-accent-color {
   color: var(--color-accent);
 }
-/* Button syling */
-
+/* Button styles */
 .btn {
   display: flex;
   flex-direction: row;
@@ -167,7 +163,46 @@ section {
   cursor: pointer;
 }
 
+/* Link syles */
 a:link,
 a:visited {
   color: var(--color-text-link);
+}
+/* Unique headings */
+.h1-main {
+  transform: translateX(-16px);
+  margin: 0 1rem 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2-main {
+  transform: translateX(-16px);
+  margin: 0 1rem 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 376px) {
+  .h1-main > h1 {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .h2-main > h2 {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-right: -20px;
+    transform: translateX(0);
+    flex-wrap: nowrap;
+  }
 }

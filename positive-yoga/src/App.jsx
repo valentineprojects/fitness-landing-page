@@ -9,10 +9,16 @@ const App = () => {
   return (
     <>
       <Header />
+      <div className='h1-main'>
+      <h1>Get access to your yoga program now!</h1>
+      </div>
       <Checkout />
       <Reviews />
       <Features />
       <Faq />
+      <div className='h2-main'>
+        <h2>Start your yoga program today!</h2>
+      </div>
       <Checkout />
     </>
     

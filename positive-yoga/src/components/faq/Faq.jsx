@@ -12,7 +12,7 @@ const Faq = () => {
   const [selected, setSelected] = useState(1)
 
   const toggle = (i) => {
-    if (selected == i) {
+    if (selected === i) {
       return setSelected(null)
     }
 
@@ -21,7 +21,7 @@ const Faq = () => {
   
   return (
     <section>
-      <div className="faq-container flex-center">
+      <div className="faq-container">
         <h3>Frequently Asked Questions</h3>
       </div>
       <div className="accordion-container">
@@ -31,9 +31,9 @@ const Faq = () => {
             <div className="accordion-item" onClick={() => toggle(i)}>
               <div className="accordion-title" >
                 <h5>{item.question}</h5>
-                <img src={selected == i ? arrowUpIcon : arrowDownIcon} alt="arrow icon" />
+                <img src={selected === i ? arrowUpIcon : arrowDownIcon} alt="arrow icon" />
               </div>
-              <div className={selected == i ? 'accordion-content-show' : 'accordion-content'}>
+              <div className={selected === i ? 'accordion-content-show' : 'accordion-content'}>
                 <p>{item.answer}</p>
               </div>
               </div>

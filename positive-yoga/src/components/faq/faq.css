@@ -1,7 +1,10 @@
 .faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 3rem;
 }
-
+/* Accordion */
 .accordion-container {
   display: flex;
   justify-content: center;
@@ -46,7 +49,40 @@
   max-height: 76px;
   transition: all 0.5s linear;
 }
-
+/* Custom problem */
 #btn-custom {
   margin-top: 12px;
+}
+/* Media queries */
+@media screen and (max-width: 376px) {
+  .faq-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  .faq-container > h3 {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 20px;
+  }
+  .accordion-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .accordion-content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .accordion-content-show {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

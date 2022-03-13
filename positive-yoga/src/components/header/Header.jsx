@@ -22,10 +22,10 @@ const Header = () => {
         </div>
       </div>  
       <div className='header flex-center'>
-        <img className='logo' src={logo}/>
+        <img className='logo' src={logo} alt='logo'/>
       </div>
         <div>
-        <p className='order-count flex-center'>Over<strong>&nbsp; 52 147 &nbsp;</strong>plans ordered.</p>
+        <p className='order-count'>Over<strong>&nbsp; 52 147 &nbsp;</strong>plans ordered.</p>
       </div>
     </header>
     

@@ -7,14 +7,18 @@ import checkmarkIcon from '../../assets/check_circle_outline.svg'
 const Features = () => {
   return (
     <section>
-      <div className="feature-container flex-row">
+      <div className="feature-container">
         <div className="feature flex-column">
+          <div className='h3-container'>
           <h3>Start your yoga journey now!</h3>
-          <img className='feature-image' src={mobilePreview} alt="mobile preview" srcset="" />
+          </div>
+          <img className='feature-image' src={mobilePreview} alt="mobile preview" />
         </div>
         {/* Feature items*/}
         <div className="feature flex-column">
+          <div className='h3-container'>
           <h3>Is Positive Yoga right for me?</h3>
+          </div>
           {/* Feature1 */}
           <div className='feature-item flex-row'>
             <img className='feature-checkmark' src={checkmarkIcon} alt="checkmark" />
@@ -47,7 +51,6 @@ const Features = () => {
           </div>
         </div>
       </div>
-
     </section>
   )
 }

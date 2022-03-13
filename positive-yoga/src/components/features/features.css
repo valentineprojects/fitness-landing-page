@@ -1,3 +1,4 @@
+/* Features */
 .feature-checkmark {
   width: 24px;
   height: 24px;
@@ -5,6 +6,7 @@
 
 .feature-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 2rem;
 }
@@ -34,4 +36,31 @@
 
 .feature-item {
   margin-top: 8px;
+}
+/* Media queries */
+@media screen and (max-width: 760px) {
+  .feature-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature {
+    max-width: 760px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .h3-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  .h3-container > h3 {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    font-size: 20px;
+  }
 }
