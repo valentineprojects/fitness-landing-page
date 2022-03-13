@@ -46,7 +46,7 @@ const Checkout = () => {
              Choose your plan and get <span className='text-accent-color'> 7 days free trial</span> </h3>
             
           {/* Box 1 */}
-            <div className={isActive1 == true ? 'box-selected': 'box'} onClick={toggleClass1}>
+            <div className={isActive1 === true ? 'box-selected': 'box'} onClick={toggleClass1}>
                 <div className="box-text" >
                 <div>
                     <h5>6 month plan
@@ -65,10 +65,10 @@ const Checkout = () => {
                 </p>
                 </div>
                 <div className="box-icon flex-column">
-                  <img className='box-icon-icon' src={isActive1 == true ? checkmarkIconActive : checkmarkIcon} alt="checkmark icon" /></div>
+                  <img className='box-icon-icon' src={isActive1 === true ? checkmarkIconActive : checkmarkIcon} alt="checkmark icon" /></div>
             </div>
           {/* Box 2 */}
-            <div className={isActive2 == true ? 'box-selected': 'box'} onClick={toggleClass2}>
+            <div className={isActive2 === true ? 'box-selected': 'box'} onClick={toggleClass2}>
                 <div className="box-text">
                 <div>
                     <h5>3 month plan
@@ -85,10 +85,10 @@ const Checkout = () => {
                 </p>
                 </div>
                 <div className="box-icon flex-column">
-                  <img className='box-icon-icon' src={isActive2 == true ? checkmarkIconActive : checkmarkIcon} alt="checkmark icon" /></div>
+                  <img className='box-icon-icon' src={isActive2 === true ? checkmarkIconActive : checkmarkIcon} alt="checkmark icon" /></div>
             </div>
           {/* Box 3 */}
-            <div className={isActive3 == true ? 'box-selected': 'box'} onClick={toggleClass3}>
+            <div className={isActive3 === true ? 'box-selected': 'box'} onClick={toggleClass3}>
                 <div className="box-text flex-column">
                 <div>
                     <h5>1 month plan
@@ -103,7 +103,7 @@ const Checkout = () => {
                 </p>
                 </div>
                 <div className="box-icon flex-column">
-                  <img className='box-icon-icon' src={isActive3 == true ? checkmarkIconActive : checkmarkIcon} alt="checkmark icon" /></div>
+                  <img className='box-icon-icon' src={isActive3 === true ? checkmarkIconActive : checkmarkIcon} alt="checkmark icon" /></div>
             </div>
             
           
@@ -114,7 +114,7 @@ const Checkout = () => {
           
           </div>
           <div className='text-container'>
-            <p className='privacy-text'>By choosing a payment method you agree to the <a href="#">T&Cs</a> and <a href="#">Privacy Policy</a></p>
+            <p className='privacy-text'>By choosing a payment method you agree to the <a href="0">T&Cs</a> and <a href="0">Privacy Policy</a></p>
             </div>
             <div className="safe-checkout-container">
           <img className='safe-checkout' src={safeCheckout} alt="safe checkout"/>
